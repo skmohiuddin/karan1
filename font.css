@@ -1,0 +1,130 @@
+/*
+Tutorial Name: Texturizing Your Text: Better ways to put texture on your text
+Author: Samuel Dalusung
+*/
+
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+nav {
+    margin: 20px auto;
+    text-align: center;
+}
+
+nav a {
+ display: inline-block;
+ text-align: center;
+background: red;
+font-family: 'Raleway', sans-serif;
+color: red;
+font-weight: 400;
+padding: 5px 15px;
+text-transform: uppercase;
+border-radius: 2px;
+letter-spacing: 1px;
+text-decoration: none;
+}
+
+nav a.active,nav a:hover {
+    background: #e5eaea;
+    color: #f1503f;
+
+}
+
+
+/* BACKGROUND CLIP
+-------------------------------------------------*/
+.background-clip {
+  background:url('../images/clouds.jpg');
+    background-repeat:repeat-x;
+    background-position:0 0;
+    font-size:200px;
+    text-transform:uppercase;
+    text-align:center;
+    font-family:'Luckiest Guy';
+    color:red;
+    -webkit-font-smoothing:antialiased;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+    -webkit-animation:BackgroundAnimated 15s linear infinite;
+    -moz-animation:BackgroundAnimated 15s linear infinite;
+    -ms-animation:BackgroundAnimated 15s linear infinite;
+    -o-animation:BackgroundAnimated 15s linear infinite;
+    animation:BackgroundAnimated 15s linear infinite
+}
+
+@keyframes BackgroundAnimated {
+from {
+    background-position:0 0
+}
+
+to {
+    background-position:100% 0
+}
+}
+
+@-webkit-keyframes BackgroundAnimated {
+from {
+    background-position:0 0
+}
+
+to {
+    background-position:100% 0
+}
+}
+
+@-ms-keyframes BackgroundAnimated {
+from {
+    background-position:0 0
+}
+
+to {
+    background-position:100% 0
+}
+}
+
+@-moz-keyframes BackgroundAnimated {
+from {
+    background-position:0 0
+}
+
+to {
+    background-position:100% 0
+}
+}
+
+/* SVG CLIP
+-------------------------------------------------*/
+.svg-clip {
+    -webkit-clip-path:url(#svgPath);
+    clip-path:url(#svgPath);
+    margin:0 auto
+}
+
+/* MASK TEXT
+-------------------------------------------------*/
+#mask-text h1 {
+    font-size:200px;
+    font-family:'Lilita One',sans-serif;
+    color:#ffe400;
+    text-shadow:7px 7px 0 #34495e;
+    text-transform:uppercase;
+    text-align:center;
+    margin:0;
+    display:block;
+    -webkit-mask-image:url(../images/texture.png);
+    -webkit-transition:all 2s ease;
+    -moz-transition:all 2s ease;
+    -o-transition:all 2s ease;
+    transition:all 2s ease
+}
+
+#mask-text h1:hover {
+    -webkit-mask-image:url(../images/texture-hover.png);
+    cursor:pointer;
+    color:#ffe400
+}

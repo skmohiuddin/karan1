@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>How to Create a Textured Text</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,500,900,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script|Lemon|Leckerli+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		body { background: #34495e; }
+
+		
+header h1 {
+    font-size: 59px;
+    font-family: 'Raleway', sans-serif;
+    color: #f1503f;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+
+header h3 {
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
+    color: #bbbfbf;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+	</style>
+
+
+	</head>
+
+<body>
+<header>
+		<h1>Texturizing Your Text</h1>	
+		<h3>Better ways to put texture on your text </h3>
+	</header>
+<nav>		
+
+
+				<a href="background-clip.html">Background-Clip</a>
+				<a href="svg.html" class="active">SVG clipPath</a>
+				<a href="mask-image.html">Mask Image</a>
+
+				
+		
+	</nav>
+	
+ <img class="svg-clip" src="images/green.jpg"> 
+
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svgPath">
+                    <text x="175" y="420" textLength="1000"  lengthAdjust="spacing" font-family="Lemon" font-size="240px"> SVG Text </text>
+                </clipPath>
+            </defs>
+        </svg>
+
+
+</body>
+</html>
